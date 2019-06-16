@@ -27,12 +27,12 @@ int main(void) {
 	lfb_base = display_init_framebuffer();
 	video_init(lfb_base);
 	
+	//Your code starts here
 	printk("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	printk("Compiled the template without changing the code huh ;)\n");
 	printk("Well, congratulations. Your reward is a button test.\n");
 	printk("Fusee Template by @witherornot1, fusee gelee by @ktemkin\n");
 	
-	// Wait for the power button, and then reset.
 	while (1) {
 		int pressed = btn_read();
 		
@@ -45,8 +45,8 @@ int main(void) {
 		}
 	}
 	
+	//Reset function (unused)
 	reset_using_pmc();
 	
-	/* Do nothing for now */
 	return 0;
 }
